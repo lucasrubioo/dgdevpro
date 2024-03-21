@@ -7,7 +7,6 @@ def post_list(request):
 # Exemplos de como funciona os views. (Tudo aquilo que recebe um request e retorna um response)
 
 def porta(request):
-    return  HttpResponse("Você deu de cara na porta !!!")
     return render(request, 'blog/porta.html', {})
 
 def sala(request):
