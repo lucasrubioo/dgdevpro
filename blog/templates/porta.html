@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Porta HTML</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  .door {
+    width: 200px;
+    height: 400px;
+    background-color: brown;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .door::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 90%;
+    height: 100%;
+    background-color: #8B4513;
+    transform: translateX(-50%);
+  }
+  .knob {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+  }
+</style>
+</head>
+<body>
+
+<div class="door">
+  <div class="knob"></div>
+</div>
+
+</body>
+</html>
